@@ -17,7 +17,8 @@ public class Marks{
             System.out.println("3. Get the average for a subject: average_s [studentID]");
             System.out.println("4. Get the average for a student: average [studentID]");
             System.out.println("5. Get the total mark of a student : total [studentID]");
-	    System.out.println("6. Exit: exit");
+	    System.out.println("6. Get the Grade: Grade");
+	    System.out.println("7. to Exit: exit");
             String s = in.nextLine();
 	    String[] vv = s.split(" ");
             if (vv[0] == "add"){
@@ -85,6 +86,12 @@ public class Marks{
                 }       
                 System.out.println("Total Marks of student" + id + " is" + " " + sum);
             }
+	    else if (vv[0] == "Grade"){
+		System.out.println("ID" + "          " + "Mathematics" + "   " + "Chemistry" + "    " + "Physics");
+		for (int i = 0;i<n;++i){
+			System.out.println((i + 1));	
+		}
+ 	    }
             else if (vv[0] == "exit")break;
 	    else {
 		System.out.println("Incorrect command, please try again");
